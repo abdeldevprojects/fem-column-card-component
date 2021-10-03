@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+*/
+
+.attribution {  font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%);}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Card Container */
+
+#card {
+    display: flex;
+    margin: 100px auto;
+    width: 60%;
+    height: 60vh;
+    /* height: 500px; */
+    
+}
+
+#card .box {
+    padding: 40px;
+}
+
+.button .link-box1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button .link-box2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button .link-box3 {
+    color: hsl(179, 100%, 13%);
+}
+
+#card .box1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#card .box2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card .box3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box .titles {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 25px auto;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.box .text {
+    line-height: 1.7;
+    color: hsla(0, 0%, 100%, 0.75);
+    /* border: 1px solid black; */
+    width: 80%;
+}
+
+.box .button {
+    border-radius: 30px;
+    width: 130px;
+    padding: 20px;
+    margin-top: 90px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.box .button:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    
+}
+
+.box .button:hover a {
+    color: hsl(0, 0%, 95%);
+}
+
+
+.button a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width : 375px) {
+    #card {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        width: 90%;
+        /* height: 60vh; */
+        /* height: 500px; */
+    }
+
+    #card .box1 {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+
+    }
+
+    #card .box3 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .box .text {
+        line-height: 1.7;
+        color: hsla(0, 0%, 100%, 0.75);
+        /* border: 1px solid black; */
+        width: 90%;
+    }
+
+    .attribution {
+        margin-top: -600px;
+    }
+    
+}
+
+
+
